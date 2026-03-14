@@ -19,6 +19,10 @@ async def start(message: Message):
 async def help(message:Message):
     await message.answer('kljhgfdzgxchvjkjl;')
 
+@dp.message(Command('about'))
+async def about(message:Message):
+    await message.answer('dsafkjl')
+
 
 async def main():
     await dp.start_polling(bot)
