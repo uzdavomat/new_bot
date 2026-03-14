@@ -15,6 +15,11 @@ async def start(message: Message):
     await message.answer(f"hello {message.from_user.first_name}")
 
 
+@dp.message(Command('help'))
+async def help(message:Message):
+    await message.answer('kljhgfdzgxchvjkjl;')
+
+
 async def main():
     await dp.start_polling(bot)
 
